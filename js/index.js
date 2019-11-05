@@ -40,3 +40,17 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+
+
+// *****NAVIGATION*****
+const nav = document.querySelectorAll("nav a");
+let navItemCount = 1;
+nav.forEach(function(currentElement){
+  currentElement.textContent = siteContent.nav[`nav-item-${navItemCount}`];
+  navItemCount ++;
+  currentElement.style.color = 'gray';
+});
+
+
+
