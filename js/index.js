@@ -69,3 +69,30 @@ nav.forEach(function(currentElement){
     ctaImg.src = siteContent ["cta"]["img-src"];
 
 
+// *****Main Content*****
+
+  // Section content H4's:
+
+  const contentH4 = document.querySelectorAll('.main-content h4');
+  contentH4[0].textContent = siteContent["main-content"]["features-h4"];
+  contentH4[1].textContent = siteContent["main-content"]["about-h4"];
+  contentH4[2].textContent = siteContent["main-content"]["services-h4"];
+  contentH4[3].textContent = siteContent["main-content"]["product-h4"];
+  contentH4[4].textContent = siteContent["main-content"]["vision-h4"];
+
+  // Middle Image:
+
+  const midImg = document.querySelector('#middle-img');
+  midImg.src = siteContent["main-content"]["middle-img-src"];
+
+  // Section Paragraph Content:
+
+  const mainContent = document.querySelectorAll('.main-content p');
+  mainContent[0].textContent = siteContent["main-content"]["features-content"];
+  mainContent[1].textContent = siteContent["main-content"]["about-content"];
+  mainContent[2].textContent = siteContent["main-content"]["services-content"];
+  mainContent[3].textContent = siteContent["main-content"]["product-content"];
+  mainContent[4].textContent = siteContent["main-content"]["vision-content"];
+
+
+
