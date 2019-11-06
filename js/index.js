@@ -94,5 +94,22 @@ nav.forEach(function(currentElement){
   mainContent[3].textContent = siteContent["main-content"]["product-content"];
   mainContent[4].textContent = siteContent["main-content"]["vision-content"];
 
+// *****Contact*****
+
+  // Contact H4:
+
+  const contactH4 = document.querySelector('.contact h4');
+  contactH4.textContent = siteContent["contact"]["contact-h4"];
+
+  // Contact Paragraph Content:
+
+  const contactContent = document.querySelectorAll('.contact p')
+  contactContent[0].textContent = siteContent["contact"]["address"];
+  contactContent[1].textContent = siteContent["contact"]["phone"];
+  contactContent[2].textContent = siteContent["contact"]["email"];
 
 
+// *****Footer*****
+
+const footer = document.querySelector('footer p');
+footer.textContent = siteContent["footer"]["copyright"];
