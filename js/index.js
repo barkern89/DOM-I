@@ -50,7 +50,22 @@ nav.forEach(function(currentElement){
   currentElement.textContent = siteContent.nav[`nav-item-${navItemCount}`];
   navItemCount ++;
   currentElement.style.color = 'gray';
+  currentElement.style.fontWeight = 'bold';
 });
 
+
+// *****Call To Action*****
+
+    // H1:
+    const ctaText = document.querySelector('.cta-text h1');
+    ctaText.textContent = siteContent ["cta"]["h1"];
+
+    //Button:
+    const ctaBtn = document.querySelector('.cta-text button');
+    ctaBtn.textContent = siteContent ["cta"]["button"];
+    
+    //Img:
+    const ctaImg = document.getElementById("cta-img");
+    ctaImg.src = siteContent ["cta"]["img-src"];
 
 
