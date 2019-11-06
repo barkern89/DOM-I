@@ -42,14 +42,13 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 
-
 // *****NAVIGATION*****
 const nav = document.querySelectorAll("nav a");
 let navItemCount = 1;
 nav.forEach(function(currentElement){
   currentElement.textContent = siteContent.nav[`nav-item-${navItemCount}`];
   navItemCount ++;
-  currentElement.style.color = 'gray';
+  currentElement.style.color = 'green';
   currentElement.style.fontWeight = 'bold';
 });
 
@@ -113,3 +112,21 @@ nav.forEach(function(currentElement){
 
 const footer = document.querySelector('footer p');
 footer.textContent = siteContent["footer"]["copyright"];
+
+// *****Adding 2 nav items*****
+
+const getNav = document.querySelector('nav');
+
+// .prepend()
+const lastNavItem = document.createElement('a');
+lastNavItem.textContent = "Hello";
+getNav.prepend(lastNavItem);
+lastNavItem.style.color = "green";
+lastNavItem.style.fontWeight = "bold";
+
+// .append()
+const firstNavItem = document.createElement('a');
+firstNavItem.textContent = "Goodbye";
+getNav.append(firstNavItem);
+firstNavItem.style.color = "green";
+firstNavItem.style.fontWeight = "bold";
